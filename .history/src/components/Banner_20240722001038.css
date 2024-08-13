@@ -1,0 +1,36 @@
+/* Đặt kiểu cho các icon */
+.banner-icon {
+  width: 20px; /* Thay đổi chiều rộng của các icon */
+  height: 20px; /* Thay đổi chiều cao của các icon */
+  margin: auto;
+}
+
+/* Đặt kiểu cho ảnh lớn */
+.banner-large-image img {
+  width: 100%; /* Ảnh lớn chiếm toàn bộ chiều rộng của container */
+  height: auto; /* Giữ tỷ lệ khung hình của ảnh */
+  border-radius: 15px; /* Bo tròn các góc của ảnh lớn */
+}
+
+/* Đặt kiểu cho các ảnh nhỏ */
+.banner-small-image img {
+  width: 100%; /* Ảnh nhỏ chiếm toàn bộ chiều rộng của container */
+  height: auto; /* Giữ tỷ lệ khung hình của ảnh nhỏ */
+  border-radius: 10px; /* Bo tròn các góc của ảnh nhỏ */
+}
+
+/* Đặt kích thước cho ảnh lớn hơn */
+.banner-large-image img {
+  width: 100%; /* Ảnh lớn chiếm toàn bộ chiều rộng của container */
+  height: auto; /* Giữ tỷ lệ khung hình của ảnh */
+  border-radius: 15px; /* Bo tròn các góc của ảnh lớn */
+  max-height: 500px; /* Thay đổi chiều cao tối đa của ảnh lớn nếu cần */
+}
+
+/* Đặt kích thước cho các ảnh nhỏ hơn */
+.banner-small-image img {
+  width: 100%; /* Ảnh nhỏ chiếm toàn bộ chiều rộng của container */
+  height: auto; /* Giữ tỷ lệ khung hình của ảnh nhỏ */
+  border-radius: 10px; /* Bo tròn các góc của ảnh nhỏ */
+  max-height: 200px; /* Thay đổi chiều cao tối đa của ảnh nhỏ nếu cần */
+}

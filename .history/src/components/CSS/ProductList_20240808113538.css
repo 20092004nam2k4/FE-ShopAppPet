@@ -1,0 +1,216 @@
+/* CSS cho ProductList */
+body {
+  margin: 0;
+  padding: 0;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  caret-color: transparent; 
+}
+
+.container {
+  display: flex;
+  width: 82%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 25px;
+  border-radius: 5px;
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 0;
+}
+
+.div-tong {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  padding-top: 10px;
+  margin-bottom: -17px;
+  margin-top: -20px;
+  
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.sidebar__top-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+ margin-top: 10px;
+}
+
+
+
+.sidebar__bottom-image {
+  flex-grow: 1rem; /* Chiếm hết phần còn lại */
+  display: flex;
+  align-items: flex-end;
+}
+
+.sidebar__bottom-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.parent-cat__title {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
+  font-size: 25px; /* Make the header smaller */
+  background-color: #b90000;
+  text-transform: uppercase;
+}
+
+.content {
+  flex-grow: 1;
+  min-
+}
+
+.tabs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure even distribution */
+}
+
+.tabs {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between; /* Distribute tabs evenly */
+  border-bottom: 2px solid #ccc;
+}
+
+.tab {
+  flex: 1; /* Each tab takes up an equal portion of the remaining space */
+  text-align: center;
+  padding: 15px 0; /* Equal padding on top and bottom */
+  cursor: pointer;
+  white-space: nowrap; /* Ensure tabs are in one line */
+}
+
+.tab.active {
+  border-bottom: 2px solid red;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.arrow-btns {
+  display: flex;
+  gap: 5px;
+   /* Ensure buttons have space between them */
+}
+.arrow-btns button {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.arrow-btn {
+  margin: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Display 5 images per row */
+  margin-top: 10px;
+  max-height: 250px; /* Set max-height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.product-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-grid .product {
+  text-align: center;
+}
+.product {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product img {
+  width: 90%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent; /* Viền ban đầu trong suốt */
+  transition: border-color 0.3s ease;
+  border-bottom: none; /* Không có viền dưới */
+}
+
+.product:hover::before {
+  border-color: rgb(245, 245, 245); /* Viền bên trên và hai bên sẽ đổi sang màu đỏ khi hover */
+}
+
+.product::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent; /* Ban đầu thanh đỏ ở dưới trong suốt */
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.product:hover::after {
+  background-color: red; /* Thanh màu đỏ hiện lên khi hover */
+}
+
+.product:hover img {
+  transform: scale(1.05); /* Phóng to ảnh khi hover */
+}
+.image-banner .wp-block-group__inner-container {
+  
+  text-align: center;
+}
+
+
+
+.image-banner .wp-block-group__inner-content .image-row__image {
+  
+  height: auto;
+  width: 100px; /* Set desired width */
+}
+.image__img{
+  width: 100%;
+  height: auto;
+  
+}
+.product-list {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-right: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+}
+
+
+

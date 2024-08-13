@@ -1,0 +1,124 @@
+/* src/CSS/ProductDetail.css */
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 40px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    flex: 1;
+    max-width: 450px;
+    margin-right: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-info h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+    position: relative;
+    padding-bottom: 60px; /* Tạo không gian cho biểu tượng sao và nút bên dưới */
+}
+
+/* Biểu tượng sao đánh giá */
+.rating-stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rating-stars i {
+    font-size: 1.2rem;
+    color: #f1c40f;
+    margin-right: 5px;
+}
+
+/* Nút Thêm vào giỏ hàng */
+.add-to-cart-button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-to-cart-button:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+
+/* Điều chỉnh phần điều khiển số lượng */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity-button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-button:hover {
+    background-color: #d35400;
+}
+
+.quantity-display {
+    font-size: 1.5rem;
+    margin: 0 15px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Đảm bảo nút hoạt động trên các thiết bị nhỏ */
+@media (max-width: 768px) {
+    .product-info h1 {
+        font-size: 2rem;
+    }
+
+    .add-to-cart-button, .quantity-button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .quantity-display {
+        font-size: 1.2rem;
+        width: auto;
+    }
+}

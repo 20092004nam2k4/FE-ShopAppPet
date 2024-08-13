@@ -1,0 +1,63 @@
+/* Common styles for large screens */
+.banner-images {
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the column */
+  gap: 10px; /* Space between large and small images */
+}
+
+/* Styles for large images */
+.banner-large-image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Styles for small images */
+.banner-small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.banner-small-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 767px) {
+  .banner-images {
+    flex-direction: column; /* Stack images vertically on mobile */
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+  }
+  
+  .banner-images > div {
+    flex: 1; /* Allow flex items to grow */
+    min-height: 300px; /* Set a minimum height */
+    overflow: hidden; /* Hide overflow */
+  }
+
+  .banner-large-image img,
+  .banner-small-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /* Styles for scrolling banner */
+  .banner-images {
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .banner-images > div {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+}

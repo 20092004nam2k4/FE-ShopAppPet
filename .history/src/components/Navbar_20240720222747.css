@@ -1,0 +1,92 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: red; /* Màu nền của navbar */
+  padding: 10px 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-category-group {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.navbar-logo {
+  height: 40px; /* Kích thước của logo */
+}
+
+.category-icon {
+  display: flex;
+  align-items: center;
+}
+
+.category-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.category-icon-svg {
+  margin-right: 8px;
+}
+
+.search-consult-group {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Chiếm không gian còn lại để căn giữa */
+  justify-content: center; /* Căn giữa các phần tử bên trong */
+  margin: 0 20px; /* Khoảng cách từ các phần tử bên trái và bên phải */
+}
+
+.search-form {
+  margin-right: 20px;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.consultation {
+  display: flex;
+  align-items: center;
+}
+
+.consult-btn {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.image-container {
+  display: flex;
+}
+
+.circle-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.form-search{
+  margin-right: ;
+}

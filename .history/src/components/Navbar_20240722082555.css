@@ -1,0 +1,237 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: #b90000; /* Màu nền của navbar */
+  padding: 10px 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-category-group {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.navbar-logo {
+  height: 40px; /* Kích thước của logo */
+}
+
+.category-icon {
+  display: flex;
+  align-items: center;
+}
+
+.category-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.category-icon-svg {
+  margin-right: 8px;
+}
+
+.search-consult-group {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Chiếm không gian còn lại để căn giữa */
+  justify-content: flex-end; /* Căn các phần tử về bên phải */
+  margin: 0 30px; /* Khoảng cách từ các phần tử bên trái và bên phải */
+}
+
+.search-form {
+  margin-right: 20px;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+  
+}
+
+.consultation {
+  display: flex;
+  align-items: center;
+  
+}
+
+.image-container {
+  display: flex;
+}
+
+.circle-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.form-search {
+  margin-right: 15%;
+  padding-right: 5%;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  position: relative; /* Để áp dụng z-index cho ảnh */
+}
+
+.circle-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover; /* Đảm bảo ảnh không bị vỡ và giữ tỷ lệ gốc */
+  margin-left: 5px;
+  position: relative; /* Để áp dụng z-index */
+}
+
+/* Ảnh bên trái */
+.circle-img:first-child {
+  z-index: 0; /* Đặt thấp hơn ảnh giữa */
+}
+
+/* Ảnh giữa */
+.circle-img:nth-child(2) {
+  z-index: 1; /* Đưa lên trên các ảnh khác */
+  position: relative;
+  margin-left: -8px; /* Điều chỉnh chồng lên ảnh bên trái */
+  margin-right: -12px;
+}
+
+/* Ảnh bên phải */
+.circle-img:last-child {
+  z-index: 0; /* Đặt thấp hơn ảnh giữa */
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #ddd; /* Đặt viền cho ô nhập */
+}
+
+.input-group .btn {
+  background-color: #F7AC12; /* Màu nền của nút tìm kiếm */
+  color: black; /* Màu chữ của nút tìm kiếm */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid #ddd; /* Đặt viền cho nút */
+}
+
+.input-group .btn:hover {
+  background-color: #F7AC12; /* Màu nền khi hover trên nút tìm kiếm */
+  color: black; /* Màu chữ khi hover */
+}
+
+.consult-btn {
+  background-color: #F7AC12; /* Màu nền của nút */
+  color: black; /* Màu chữ của nút */
+  border: none; /* Không viền */
+  padding: 10px 30px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 20px;
+  border-radius: 5px; /* Bo tròn viền của nút */
+}
+
+.consult-btn:hover {
+  background-color: #F7AC12; /* Màu nền khi hover trên nút */
+  color: black; /* Màu chữ khi hover */
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .navbar {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .form-search {
+    margin-right: 20px;
+    flex-grow: 1; /* Cho phép form-search chiếm không gian còn lại */
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-content {
+    flex-direction: column;
+  }
+
+  .search-consult-group {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .form-search {
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-category-group {
+    flex-direction: column;
+  }
+
+  .category-icon {
+    margin-top: 10px;
+  }
+
+ 
+
+  .consult-btn {
+    margin-bottom: 10px;
+  }
+
+  .image-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .search-consult-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-search {
+    width: 100%;
+  }
+
+  .input-group .form-control {
+    width: calc(100% - 60px); /* Điều chỉnh kích thước ô nhập */
+  }
+
+  .input-group .btn {
+    width: 40px; /* Điều chỉnh kích thước nút */
+  }
+}
+

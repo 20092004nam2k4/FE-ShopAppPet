@@ -1,0 +1,36 @@
+.product-list .flickity-slider {
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.parent-cat__nav-item {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+.parent-cat__nav-item.is-active {
+    color: red; /* Example of active button styling */
+}
+
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 400px; /* Adjust based on your preference */
+}
+
+.product-item {
+    flex: 1 0 21%; /* Adjust width based on the number of items per row */
+    margin: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,19 @@
+.product-list {
+    max-width: 100%;
+    width: 99%;
+    height:100% ;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+.left-column {
+    background-color: aqua;
+}
+.right-column {
+    background-color: aquamarine;
+}
+.parent-cat__image-wrapper {
+    margin-right: 10px;
+}

@@ -1,0 +1,41 @@
+/* Đặt kiểu cho container nút */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Xếp chồng các nút theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+/* Đặt kiểu cho các nút */
+.banner-button {
+  display: flex;
+  flex-direction: column; /* Đặt icon và tiêu đề theo chiều dọc */
+  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+  border: none; /* Loại bỏ đường viền */
+  background: #f0f0f0; /* Màu nền của nút */
+  border-radius: 15px; /* Bo tròn các góc của nút */
+  padding: 10px; /* Padding xung quanh nội dung nút */
+  cursor: pointer; /* Hiển thị con trỏ tay khi di chuột qua */
+  text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+  width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng của cột */
+  height: auto; /* Chiều cao tự động */
+}
+
+/* Đặt kiểu cho nút khi di chuột qua */
+.banner-button:hover {
+  background-color: #ddd; /* Màu nền khi di chuột qua */
+}
+
+/* Đặt kiểu cho các icon */
+.banner-icon {
+  width: 50px; /* Chiều rộng cố định cho các icon */
+  height: 50px; /* Chiều cao cố định cho các icon */
+  margin-bottom: 5px; /* Khoảng cách giữa icon và tiêu đề */
+}
+
+/* Đặt kiểu cho tiêu đề của các icon */
+.banner-icon-title {
+  text-align: center;
+  font-size: 16px; /* Kích thước chữ */
+  color: #333; /* Màu chữ */
+}

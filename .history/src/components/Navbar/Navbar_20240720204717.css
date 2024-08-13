@@ -1,0 +1,27 @@
+.header--layout-theme {
+    font-size: .9125rem;
+}
+& [data-sticky-header] {
+    transition: all 0.5s;
+}
+.header--dark-contract {
+    color: #fff;
+    color: var(--white);
+}
+.header {
+    position: relative;
+    z-index: 99;
+    transition: all 0.3s;
+}
+.bg-primary {
+    background-color: #1346af;
+    background-color: var(--primary);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+user agent stylesheet
+header {
+    display: block;
+    unicode-bidi: isolate;
+}

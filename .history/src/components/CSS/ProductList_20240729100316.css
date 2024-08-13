@@ -1,0 +1,11 @@
+.product-list {
+    max-width: 98%;
+    width: 100%;
+    height:100% ;
+}
+.left-column {
+    background-color: aqua;
+}
+.right-column {
+    background-color: aquamarine;
+}

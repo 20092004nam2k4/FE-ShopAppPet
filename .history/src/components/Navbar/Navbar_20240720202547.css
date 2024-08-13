@@ -1,0 +1,56 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    background-color: #f8f9fa; /* Màu nền sáng cho navbar */
+    padding: 1rem; /* Khoảng cách bên trong navbar */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem; /* Kích thước chữ cho tên thương hiệu */
+    font-weight: bold; /* Chữ đậm */
+    color: #333; /* Màu chữ */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Xóa viền của nút toggle */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,...'); /* Icon cho nút toggle */
+  }
+  
+  .navbar-nav {
+    margin-left: auto; /* Đẩy các mục điều hướng sang bên phải */
+  }
+  
+  .nav-item {
+    margin-right: 1rem; /* Khoảng cách giữa các mục điều hướng */
+  }
+  
+  .nav-link {
+    color: #333; /* Màu chữ cho các liên kết điều hướng */
+    font-size: 1rem; /* Kích thước chữ */
+    padding: 0.5rem 1rem; /* Khoảng cách bên trong liên kết */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu chữ khi di chuột */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Màu chữ khi di chuột qua liên kết */
+  }
+  
+  .nav-item.active .nav-link {
+    font-weight: bold; /* Chữ đậm cho liên kết hiện tại */
+    color: #007bff; /* Màu chữ cho liên kết hiện tại */
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  

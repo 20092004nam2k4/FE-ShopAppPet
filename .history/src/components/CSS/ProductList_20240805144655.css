@@ -1,0 +1,129 @@
+/* CSS cho ProductList */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  caret-color: transparent; 
+}
+
+.container {
+  display: flex;
+  width: 82%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.div-tong {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin-left: -20px;
+  margin-bottom: -17px;
+  margin-top: -20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.sidebar__top-image img,
+.sidebar__bottom-image img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.product-list .sidebar h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.sidebar__top-image,
+.sidebar__bottom-image {
+  margin-bottom: 20px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.tabs-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.arrow-btns {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.tabs {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #d5a350;
+  color: white;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product {
+  width: 180px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product p {
+  margin: 10px 0 0;
+  font-size: 16px;
+  color: #333;
+}

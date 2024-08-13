@@ -1,0 +1,61 @@
+.product {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Thanh xám hai bên khi hover */
+.product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px; /* Chiều rộng của thanh xám */
+  height: 100%;
+  background-color: transparent; /* Ban đầu thanh xám trong suốt */
+  transition: background-color 0.3s ease;
+}
+
+.product::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px; /* Chiều rộng của thanh xám */
+  height: 100%;
+  background-color: transparent; /* Ban đầu thanh xám trong suốt */
+  transition: background-color 0.3s ease;
+}
+
+.product:hover::before,
+.product:hover::after {
+  background-color: gray; /* Màu xám của thanh khi hover */
+}
+
+.product:hover img {
+  transform: scale(1.05); /* Phóng to ảnh khi hover */
+}
+
+/* Thanh màu đỏ ở dưới khi hover */
+.product::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent; /* Ban đầu thanh đỏ ở dưới trong suốt */
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.product:hover::after {
+  background-color: red; /* Thanh màu đỏ hiện lên khi hover */
+}

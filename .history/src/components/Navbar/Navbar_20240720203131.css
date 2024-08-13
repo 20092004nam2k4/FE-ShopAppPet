@@ -1,0 +1,36 @@
+/* Navbar.css */
+.navbar-red {
+    background-color: red;
+  }
+  
+  .navbar-logo {
+    height: 40px; /* Điều chỉnh chiều cao của logo nếu cần */
+  }
+  
+  .category-icon {
+    width: 24px; /* Điều chỉnh kích thước của biểu tượng danh mục sản phẩm */
+    margin-right: 15px; /* Khoảng cách giữa biểu tượng danh mục và thanh tìm kiếm */
+  }
+  
+  .search-input {
+    width: 200px; /* Điều chỉnh kích thước thanh tìm kiếm */
+  }
+  
+  .consult-btn {
+    background-color: yellow;
+    color: black;
+    border: none;
+    margin-right: 15px; /* Khoảng cách giữa nút tư vấn và hình tròn */
+  }
+  
+  .image-container {
+    display: flex;
+  }
+  
+  .circle-img {
+    width: 40px; /* Kích thước hình tròn */
+    height: 40px;
+    border-radius: 50%; /* Làm cho hình ảnh thành hình tròn */
+    margin-left: 5px; /* Khoảng cách giữa các hình tròn */
+  }
+  

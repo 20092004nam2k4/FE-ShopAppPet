@@ -1,0 +1,11 @@
+/* src/assets/css/style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  

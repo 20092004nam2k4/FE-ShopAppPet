@@ -1,0 +1,164 @@
+/* Cơ bản */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container chính */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/* Bố cục grid cho sản phẩm */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Hình ảnh sản phẩm */
+.product-grid img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 25%;
+  margin-right: 20px;
+}
+
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Nội dung chính */
+.content {
+  flex: 1;
+}
+
+/* Tabs */
+.tabs-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+
+.tab.active {
+  background-color: #ddd;
+  border-bottom: 1px solid transparent;
+}
+
+/* Nút điều hướng */
+.arrow-btns {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.arrow-btns button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+form input,
+form select,
+form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Khi màn hình nhỏ hơn 1200px */
+@media (max-width: 1200px) {
+  .product-grid {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Khi màn hình nhỏ hơn 992px */
+@media (max-width: 992px) {
+  .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sidebar {
+      min-width: 25%;
+  }
+}
+
+/* Khi màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sidebar {
+      display: none;
+  }
+
+  .content {
+      min-width: 100%;
+  }
+}
+
+/* Khi màn hình nhỏ hơn 576px */
+@media (max-width: 576px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .tabs-wrapper {
+      flex-direction: column;
+  }
+
+  .arrow-btns {
+      flex-direction: column;
+  }
+}

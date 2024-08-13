@@ -1,0 +1,135 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  padding: 10px 20px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo-category-group {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  max-width: 120px;
+}
+
+.category-icon {
+  margin-left: 20px;
+}
+
+.searchBox {
+  display: flex;
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.searchButton {
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  border-radius: 0 5px 5px 0;
+  color: white;
+}
+
+.consultation {
+  position: relative;
+}
+
+.cart-icon-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.cart-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  color: white;
+}
+
+.cart-count {
+  font-size: 12px;
+}
+
+.cart-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1000;
+}
+
+.empty-cart {
+  padding: 20px;
+  text-align: center;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.checkout-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3;
+}

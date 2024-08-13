@@ -1,0 +1,88 @@
+/* Navbar.css */
+.navbar-red {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar-logo {
+    height: 40px; /* Điều chỉnh chiều cao của logo nếu cần */
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center; /* Căn chỉnh dọc giữa các phần tử */
+    flex-grow: 1; /* Đảm bảo phần tử chiếm toàn bộ chiều rộng của navbar */
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center; /* Căn chỉnh dọc giữa các phần tử */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 10px; /* Khoảng cách giữa các mục */
+  }
+  
+  .category-icon {
+    width: 24px; /* Điều chỉnh kích thước của biểu tượng danh mục sản phẩm */
+  }
+  
+  .search-input {
+    width: 200px; /* Điều chỉnh kích thước thanh tìm kiếm */
+  }
+  
+  .consult-btn {
+    background-color: yellow;
+    color: black;
+    border: none;
+    margin-right: 15px; /* Khoảng cách giữa nút tư vấn và hình tròn */
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle-img {
+    width: 40px; /* Kích thước hình tròn */
+    height: 40px;
+    border-radius: 50%; /* Làm cho hình ảnh thành hình tròn */
+    margin-left: 5px; /* Khoảng cách giữa các hình tròn */
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 992px) {
+    .navbar-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-input {
+      width: 100%; /* Làm cho thanh tìm kiếm chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+      max-width: 300px; /* Đặt chiều rộng tối đa cho thanh tìm kiếm */
+    }
+  
+    .consult-btn {
+      margin-right: 0; /* Loại bỏ khoảng cách khi ở màn hình nhỏ */
+      margin-bottom: 10px; /* Khoảng cách dưới nút tư vấn trên màn hình nhỏ */
+    }
+  
+    .image-container {
+      margin-top: 10px; /* Khoảng cách trên cùng của hình tròn khi ở màn hình nhỏ */
+    }
+    .nav{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .navbar navbar-expand-lg navbar-red{
+        
+    }
+
+  }
+  

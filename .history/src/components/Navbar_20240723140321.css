@@ -1,0 +1,121 @@
+.navbar {
+  background-color: #b90000; /* Màu nền của navbar */
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Đặt chiều rộng tối đa */
+  margin: 0 auto; /* Căn giữa nội dung */
+}
+
+.side-image {
+  display: none; /* Ẩn ảnh bên trái và bên phải mặc định */
+}
+
+.side-image-left,
+.side-image-right {
+  display: flex; /* Đặt chế độ hiển thị của ảnh */
+  align-items: center;
+}
+
+.side-image-left {
+  margin-right: 10px;
+}
+
+.side-image-right {
+  margin-left: 10px;
+}
+
+.side-img {
+  height: 40px; /* Điều chỉnh chiều cao của ảnh bên cạnh */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.navbar-logo {
+  height: 40px; /* Kích thước của logo */
+}
+
+.search-consult-group {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Chiếm không gian còn lại để căn giữa */
+  justify-content: flex-end; /* Căn các phần tử về bên phải */
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.consultation {
+  display: flex;
+  align-items: center;
+}
+
+.circle-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+    flex-direction: column; /* Đặt các phần tử theo chiều dọc */
+    align-items: center;
+  }
+
+  .navbar-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Đảm bảo nội dung chiếm toàn bộ chiều rộng */
+  }
+
+  .side-image {
+    display: flex; /* Hiển thị ảnh bên trái và bên phải trên điện thoại */
+    align-items: center;
+  }
+
+  .side-image-left {
+    margin-bottom: 10px;
+  }
+
+  .side-image-right {
+    margin-bottom: 10px;
+  }
+
+  .search-consult-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .input-group .form-control {
+    width: calc(100% - 40px); /* Điều chỉnh kích thước ô nhập */
+  }
+
+  .input-group .btn {
+    width: 40px; /* Điều chỉnh kích thước nút */
+  }
+}

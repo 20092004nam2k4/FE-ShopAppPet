@@ -1,0 +1,78 @@
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  .content {
+    min-width: 75%;
+  }
+
+  .sidebar {
+    min-width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content, .sidebar {
+    min-width: 100%;
+    margin-top: 10px;
+  }
+
+  .tabs-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabs {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    flex: 1 1 auto;
+    text-align: left;
+  }
+
+  .arrow-btns {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  .product-grid .product {
+    padding: 10px;
+  }
+
+  .tabs-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabs {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    padding: 10px 0;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .arrow-btns {
+    display: none; /* Ẩn các nút điều hướng khi màn hình quá nhỏ */
+  }
+}

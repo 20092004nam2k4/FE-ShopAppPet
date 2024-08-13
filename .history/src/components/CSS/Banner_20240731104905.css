@@ -1,0 +1,116 @@
+/* Đặt container cho các phần tử chính */
+.container-banner {
+  justify-content: center;
+  t
+  padding-top: 1%;
+  max-width: 82%; /* Điều chỉnh kích thước tối đa của container */
+  height: auto; /* Chiều cao tự động cho container */
+}
+
+/* Đặt kiểu cho cột chứa ảnh lớn và ảnh nhỏ */
+.banner-images {
+  display: flex;
+  align-items: stretch; /* Đảm bảo các phần tử con có cùng chiều cao */
+  gap: 10px; /* Khoảng cách giữa ảnh lớn và ảnh nhỏ */
+}
+
+/* Đặt kiểu cho ảnh lớn */
+.banner-large-image {
+  flex: 2;
+  display: flex;
+}
+
+.banner-large-image img {
+  width: 100%; /* Ảnh lớn chiếm toàn bộ chiều rộng của container */
+  height: 100%; /* Chiều cao của ảnh lớn là 100% */
+  border-radius: 10px; /* Bo tròn các góc của ảnh lớn */
+  object-fit: cover; /* Đảm bảo ảnh không bị vỡ và giữ tỷ lệ gốc */
+}
+
+/* Đặt kiểu cho phần chứa ảnh nhỏ */
+.banner-small-images {
+  display: flex;
+  flex-direction: column; /* Xếp ảnh nhỏ theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa các ảnh nhỏ */
+  flex: 1; /* Phần chứa ảnh nhỏ chiếm ít không gian hơn */
+}
+
+/* Đặt kiểu cho các ảnh nhỏ */
+.banner-small-image {
+  flex: 1;
+  display: flex;
+}
+
+.banner-small-image img {
+  width: 100%; /* Ảnh nhỏ chiếm toàn bộ chiều rộng của container */
+  height: 100%; /* Chiều cao của ảnh nhỏ là 100% */
+  border-radius: 10px; /* Bo tròn các góc của ảnh nhỏ */
+  object-fit: cover; /* Đảm bảo ảnh không bị vỡ và giữ tỷ lệ gốc */
+}
+
+/* Đặt kiểu cho các mục icon */
+.banner-icon-item {
+  display: flex;
+  flex-direction: column; /* Đặt icon và chữ theo chiều dọc */
+  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+  border: 1px solid #ddd; /* Đường viền khung */
+  border-radius: 8px; /* Bo tròn góc khung */
+  background-color: #f9f9f9; /* Màu nền khung */
+  margin-bottom: 10px; /* Khoảng cách giữa các icon */
+}
+
+/* Đặt kiểu cho các icon */
+.banner-icon {
+  width: 40px; /* Chiều rộng cố định cho các icon */
+  height: 40px; /* Chiều cao cố định cho các icon */
+}
+
+/* Đặt kiểu cho tiêu đề của các icon */
+.banner-icon-title {
+  text-align: center;
+  font-size: 16px; /* Kích thước chữ */
+  color: #5d5d5d; /* Màu chữ */
+}
+
+/* Đặt kiểu cho các liên kết của icon */
+.banner-icon-item a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: #333; /* Màu chữ cho liên kết */
+}
+
+/* Đặt kiểu cho container nút */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Xếp chồng các nút theo chiều dọc */
+  background-color: white;
+  border-radius: 10px;
+  height: 100%; /* Chiều cao của container nút là 100% */
+}
+
+/* Đặt kiểu cho các nút */
+.banner-button {
+  display: flex;
+  margin: auto;
+  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+  border: none; /* Loại bỏ đường viền */
+  background: white; /* Màu nền của nút */
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer; /* Hiển thị con trỏ tay khi di chuột qua */
+  text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển màu nền và màu chữ */
+  width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng của cột */
+  color: #333; /* Màu chữ mặc định */
+  border-bottom: 2px solid #f5f4f4;
+}
+
+/* Đặt kiểu cho nút khi di chuột qua */
+.banner-button:hover {
+  background-color: #f7f6f6; /* Màu nền khi di chuột qua */
+  color: red; /* Màu chữ khi di chuột qua */
+}
+
+/* Đặt kiểu cho các phần tử bên trong nút */
+.banner-button .icon-pet {
+  margin-right: 20px; /* Khoảng cách giữa icon và tiêu đề */
+}

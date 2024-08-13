@@ -1,0 +1,42 @@
+/* src/components/Banner.css */
+.banner-icons {
+    margin-bottom: 20px;
+  }
+  
+  .banner-icon-item {
+    margin-bottom: 10px;
+  }
+  
+  .banner-icon {
+    display: block;
+    width: 100px; /* Điều chỉnh kích thước nếu cần */
+    height: auto;
+  }
+  
+  .banner-icon-title {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .banner-images {
+    display: flex;
+    align-items: flex-start; /* Căn chỉnh ảnh nhỏ theo chiều dọc với ảnh lớn */
+  }
+  
+  .banner-large-image {
+    flex: 2; /* Tỉ lệ rộng hơn cho ảnh lớn */
+    margin-right: 20px; /* Khoảng cách giữa ảnh lớn và ảnh nhỏ */
+  }
+  
+  .banner-small-images {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Tỉ lệ rộng hơn cho ảnh nhỏ */
+    gap: 10px; /* Khoảng cách giữa các ảnh nhỏ */
+  }
+  
+  .banner-small-image {
+    width: 100%;
+  }
+  

@@ -1,0 +1,59 @@
+.banner-icon-item {
+    display: flex;
+    flex-direction: column; /* Đặt icon và chữ theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+    border: 1px solid #ddd; /* Đường viền khung */
+    border-radius: 8px; /* Bo tròn góc khung */
+    background-color: #f9f9f9; /* Màu nền khung */
+  }
+  
+  .banner-icon {
+    width: 30px; /* Chiều rộng cố định cho các icon */
+    height: 30px; /* Chiều cao cố định cho các icon */
+    margin: auto;
+  }
+  
+  .banner-icon-title {
+    text-align: center;
+    font-size: 16px; /* Kích thước chữ */
+    color: #333; /* Màu chữ */
+  }
+  
+  .banner-icon-item a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #333; /* Màu chữ cho liên kết */
+  }
+  
+  .banner-images {
+    display: flex;
+    flex-direction: column; /* Đặt các ảnh theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa ảnh lớn và ảnh nhỏ */
+  }
+  
+  .banner-large-image img {
+    max-width: 100%;
+    max-height: auto; /* Đảm bảo ảnh lớn duy trì tỷ lệ khung hình */
+    object-fit: cover; /* Đảm bảo ảnh lớn không bị biến dạng */
+    border-radius: 15px; /* Bo tròn các góc của ảnh lớn */
+  }
+  
+  .banner-small-images {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các ảnh nhỏ */
+  }
+  
+  .banner-small-image img {
+    width: 100%; /* Đảm bảo ảnh nhỏ chiếm toàn bộ chiều rộng của cột */
+    height: auto; /* Đảm bảo ảnh nhỏ duy trì tỷ lệ khung hình */
+    object-fit: cover; /* Đảm bảo ảnh nhỏ không bị biến dạng */
+    border-radius: 10px; /* Bo tròn các góc của ảnh nhỏ */
+  }
+  
+  .container {
+    padding-top: 1%;
+    max-width: 80%;
+  }
+ 
+  

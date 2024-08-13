@@ -1,0 +1,215 @@
+/* CSS cho ProductList */
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  caret-color: transparent; 
+}
+
+.container {
+  display: flex;
+  width: 82%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 25px;
+  border-radius: 5px;
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 0;
+}
+
+.div-tong {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  padding-top: 10px;
+  margin-bottom: -17px;
+  margin-top: -20px;
+}
+
+.sidebar {
+  display: block;
+  flex-direction: column;
+  min-width: 20%;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.sidebar__top-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.sidebar__bottom-image {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.sidebar__bottom-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: block;
+}
+
+.parent-cat__title {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
+  font-size: 20px;
+  background-color: #b90000;
+  text-transform: uppercase;
+}
+
+.content {
+  min-width: 80%;
+}
+
+.tabs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.tabs {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab.active {
+  border-bottom: 2px solid red;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.arrow-btns {
+  display: flex;
+  gap: 5px;
+}
+
+.arrow-btns button {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.arrow-btn {
+  margin: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+
+
+
+.product-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-grid .product {
+  text-align: center;
+}
+
+.product {
+  cursor: pointer;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  border-bottom: none;
+}
+
+.product:hover::before {
+  border-color: rgb(245, 245, 245);
+}
+
+.product::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.product:hover::after {
+  background-color: red;
+}
+
+.product:hover img {
+  transform: scale(1.05);
+}
+
+.image-banner .wp-block-group__inner-container {
+  text-align: center;
+}
+
+.image-banner .wp-block-group__inner-content .image-row__image {
+  height: auto;
+  width: 100px;
+}
+
+.image__img {
+  width: 100%;
+  height: auto;
+}
+
+.product-list {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-right: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

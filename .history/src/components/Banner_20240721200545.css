@@ -1,0 +1,92 @@
+/* src/components/Banner.css */
+.banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .banner-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .banner-col {
+    flex: 1;
+  }
+  
+  .banner-col-left {
+    max-width: 250px;
+  }
+  
+  .banner-nav {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .banner-nav-header {
+    margin-bottom: 10px;
+  }
+  
+  .banner-nav-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .banner-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    margin-bottom: 10px;
+  }
+  
+  .menu-item__icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  
+  .menu-item__image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .menu-item__title {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+  }
+  
+  .banner-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .banner-row {
+    margin-bottom: 10px;
+  }
+  
+  .banner-row-large {
+    flex: 1;
+  }
+  
+  .banner-row-small {
+    flex: 1;
+  }
+  
+  .banner-link {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,65 @@
+/* src/components/Banner.css */
+
+.hero-banner__nav {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .hero-banner__nav-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .hero-banner__nav-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .hero-banner__nav-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-banner__menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    margin: 0 10px;
+  }
+  
+  .menu-item__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px; /* Chiều rộng của ô chứa icon và chữ */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .menu-item__container:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-item__icon {
+    width: 40px; /* Kích thước icon nhỏ hơn */
+    height: 40px; /* Kích thước icon nhỏ hơn */
+    margin-bottom: 5px;
+  }
+  
+  .menu-item__image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .menu-item__title {
+    font-size: 12px;
+    color: #555;
+  }
+  

@@ -1,0 +1,56 @@
+/* Navbar.css */
+.navbar-red {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px; /* Thêm khoảng cách bên trong để làm cho navbar nhìn gọn gàng hơn */
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .logo-group, .category-button-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    height: 40px; /* Điều chỉnh chiều cao của logo nếu cần */
+    margin-right: 15px; /* Khoảng cách giữa logo và nút danh mục */
+  }
+  
+  .category-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .category-icon svg {
+    width: 24px; /* Kích thước biểu tượng nhỏ hơn */
+    height: 24px;
+  }
+  
+  .category-title {
+    margin-left: 5px;
+    color: white; /* Điều chỉnh màu chữ nếu cần */
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 992px) {
+    .navbar-content {
+      flex-direction: column;
+    }
+  
+    .logo-group, .category-button-group {
+      margin-bottom: 10px; /* Khoảng cách giữa logo và nút danh mục trên màn hình nhỏ */
+    }
+  }
+  

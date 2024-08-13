@@ -1,0 +1,187 @@
+/* src/components/Navbar.css */
+
+/* General Styles */
+.navbar {
+  background-color: #b90000;
+  padding: 10px 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-category-group {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.navbar-logo {
+  height: 40px;
+}
+
+.category-icon {
+  display: flex;
+  align-items: center;
+}
+
+.category-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.category-icon-svg {
+  margin-right: 8px;
+}
+
+.search-consult-group {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: right;
+  margin: 0 20px;
+}
+
+.search-form {
+  margin-right: 20px;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.consultation {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+}
+
+.circle-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.form-search {
+  margin-right: 15%;
+  padding-right: 5%;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #ddd;
+}
+
+.input-group .btn {
+  background-color: #F7AC12;
+  color: black;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid #ddd;
+}
+
+.input-group .btn:hover {
+  background-color: #F7AC12;
+  color: black;
+}
+
+.consult-btn {
+  background-color: #F7AC12;
+  color: black;
+  border: none;
+  padding: 10px 30px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 20px;
+  border-radius: 25px; /* Rounded border */
+}
+
+.consult-btn:hover {
+  background-color: #F7AC12;
+  color: black;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-consult-group {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .form-search {
+    margin: 10px 0;
+  }
+
+  .consultation {
+    margin-top: 10px;
+  }
+
+  .circle-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 30px;
+  }
+
+  .category-button {
+    font-size: 12px;
+  }
+
+  .input-group .form-control {
+    font-size: 14px;
+  }
+
+  .input-group .btn {
+    font-size: 14px;
+  }
+
+  .consult-btn {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+
+  .circle-img {
+    width: 25px;
+    height: 25px;
+  }
+}

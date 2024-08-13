@@ -1,0 +1,14 @@
+.parent-cat__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    width: 100%; /* Đặt chiều rộng thành 100% để chiếm toàn bộ cột */
+}
+
+.parent-cat__image {
+    width: 100%; /* Đặt chiều rộng của ảnh thành 100% để nó chiếm toàn bộ chiều rộng của parent-cat__image-wrapper */
+    height: auto; /* Để giữ tỷ lệ khung hình của ảnh */
+}
+.parent-cat__title-text {
+    background-color: #BA;
+}
